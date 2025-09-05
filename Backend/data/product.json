@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Smart LED Bulb Electronic",
+    "price": 24.99,
+    "description": "WiFi enabled smart bulb with 16 million colors",
+    "ratings": 4.3,
+    "images": [{"image": "/images/products/smart bulb.jpg"}],
+    "category": "Electronics",
+    "seller": "SmartHome Inc",
+    "stock": 45,
+    "numOfReviews": 28
+  },
+  {
+    "name": "Digital Photo Frame Electronic",
+    "price": 89.99,
+    "description": "10.1 inch HD digital picture frame with cloud storage",
+    "ratings": 4.1,
+    "images": [{"image": "/images/products/frame.jpg"}],
+    "category": "Electronics",
+    "seller": "TechDisplay",
+    "stock": 22,
+    "numOfReviews": 15
+  },
+  {
+    "name": "Wireless Charging Pad Electronic",
+    "price": 19.99,
+    "description": "15W fast charging pad compatible with Qi devices",
+    "ratings": 4.0,
+    "images": [{"image": "/images/products/wireless.jpg"}],
+    "category": "Electronics",
+    "seller": "PowerUp",
+    "stock": 67,
+    "numOfReviews": 42
+  },
+  {
+    "name": "Bluetooth FM Transmitter Electronic",
+    "price": 29.95,
+    "description": "Car audio adapter with handsfree calling",
+    "ratings": 4.2,
+    "images": [{"image": "/images/products/BFM transitter.jpg"}],
+    "category": "Electronics",
+    "seller": "AutoTech",
+    "stock": 38,
+    "numOfReviews": 31
+  },
+  {
+    "name": "E-Reader Electronic",
+    "price": 129.99,
+    "description": "6-inch HD touchscreen with 32GB storage",
+    "ratings": 4.5,
+    "images": [{"image": "/images/products/Eradar.jpg"}],
+    "category": "Electronics",
+    "seller": "ReadWell",
+    "stock": 19,
+    "numOfReviews": 87
+  },
+
+  {
+    "name": "Vivo V27 Pro Mobile Phone",
+    "price": 379.0,
+    "description": "Vivo V27 Pro with color-changing design and great camera",
+    "ratings": 4.7,
+    "images": [{"image": "/images/products/v27.jpg"}],
+    "category": "Mobile Phones",
+    "seller": "Vivo",
+    "stock": 9,
+    "numOfReviews": 30
+  },
+  {
+    "name": "Samsung Galaxy S23 Mobile Phone",
+    "price": 799.99,
+    "description": "Flagship Android phone with 200MP camera",
+    "ratings": 4.8,
+    "images": [{"image": "/images/products/s23.jpg"}],
+    "category": "Mobile Phones",
+    "seller": "Samsung",
+    "stock": 15,
+    "numOfReviews": 112
+  },
+  {
+    "name": "iPhone 14 Mobile Phone",
+    "price": 899.00,
+    "description": "Apple's latest smartphone with A15 Bionic chip",
+    "ratings": 4.9,
+    "images": [{"image": "/images/products/i14.jpg"}],
+    "category": "Mobile Phones",
+    "seller": "Apple",
+    "stock": 12,
+    "numOfReviews": 145
+  },
+  {
+    "name": "OnePlus 11 Mobile Phone",
+    "price": 699.00,
+    "description": "High performance phone with Hasselblad camera",
+    "ratings": 4.6,
+    "images": [{"image": "/images/products/one11.jpg"}],
+    "category": "Mobile Phones",
+    "seller": "OnePlus",
+    "stock": 8,
+    "numOfReviews": 67
+  },
+  {
+    "name": "Xiaomi Redmi Note 12 Mobile Phone",
+    "price": 249.99,
+    "description": "Budget phone with AMOLED display",
+    "ratings": 4.3,
+    "images": [{"image": "/images/products/note12.jpg"}],
+    "category": "Mobile Phones",
+    "seller": "Xiaomi",
+    "stock": 25,
+    "numOfReviews": 53
+  },
+
+  {
+    "name": "MacBook Pro 14\" Laptop",
+    "price": 1999.00,
+    "description": "Apple M2 Pro chip, 16GB RAM, 512GB SSD",
+    "ratings": 4.9,
+    "images": [{"image": "/images/products/mac14.jpg"}],
+    "category": "Laptops",
+    "seller": "Apple",
+    "stock": 7,
+    "numOfReviews": 89
+  },
+  {
+    "name": "Dell XPS 15 Laptop",
+    "price": 1499.99,
+    "description": "15.6\" 4K touchscreen, Intel i7, 16GB RAM",
+    "ratings": 4.7,
+    "images": [{"image": "/images/products/2.jpg"}],
+    "category": "Laptops",
+    "seller": "Dell",
+    "stock": 10,
+    "numOfReviews": 76
+  },
+  {
+    "name": "HP Spectre x360 Laptop",
+    "price": 1299.00,
+    "description": "2-in-1 convertible laptop, OLED display",
+    "ratings": 4.6,
+    "images": [{"image": "/images/products/3.jpg"}],
+    "category": "Laptops",
+    "seller": "HP",
+    "stock": 5,
+    "numOfReviews": 64
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon Laptop",
+    "price": 1599.00,
+    "description": "Business ultrabook with military-grade durability",
+    "ratings": 4.8,
+    "images": [{"image": "/images/products/4.jpg"}],
+    "category": "Laptops",
+    "seller": "Lenovo",
+    "stock": 9,
+    "numOfReviews": 58
+  },
+  {
+    "name": "Asus ROG Zephyrus G14 Laptop",
+    "price": 1399.99,
+    "description": "Gaming laptop with RTX 3060, 120Hz display",
+    "ratings": 4.5,
+    "images": [{"image": "/images/products/5.jpg"}],
+    "category": "Laptops",
+    "seller": "Asus",
+    "stock": 6,
+    "numOfReviews": 42
+  },
+
+  {
+    "name": "Wireless Mouse Accessorie",
+    "price": 29.99,
+    "description": "Ergonomic wireless mouse with silent clicks",
+    "ratings": 4.2,
+    "images": [{"image": "/images/products/1.jpg"}],
+    "category": "Accessories",
+    "seller": "Logitech",
+    "stock": 50,
+    "numOfReviews": 35
+  },
+  {
+    "name": "Stand Accessorie",
+    "price": 24.95,
+    "description": "Adjustable aluminum stand for better ergonomics",
+    "ratings": 4.3,
+    "images": [{"image": "/images/products/2.jpg"}],
+    "category": "Accessories",
+    "seller": "AmazonBasics",
+    "stock": 42,
+    "numOfReviews": 28
+  },
+  {
+    "name": "USB-C Hub Accessorie",
+    "price": 39.99,
+    "description": "7-in-1 adapter with HDMI, USB, and SD card slots",
+    "ratings": 4.1,
+    "images": [{"image": "/images/products/3.jpg"}],
+    "category": "Accessories",
+    "seller": "Anker",
+    "stock": 37,
+    "numOfReviews": 47
+  },
+  {
+    "name": "Keyboard Cover Accessorie",
+    "price": 12.99,
+    "description": "Silicone protector for MacBook keyboards",
+    "ratings": 3.9,
+    "images": [{"image": "/images/products/4.jpg"}],
+    "category": "Accessories",
+    "seller": "MoKo",
+    "stock": 68,
+    "numOfReviews": 19
+  },
+  {
+    "name": "Screen Cleaning Kit Accessorie",
+    "price": 9.99,
+    "description": "Microfiber cloth and cleaning solution for screens",
+    "ratings": 4.0,
+    "images": [{"image": "/images/products/5.jpg"}],
+    "category": "Accessories",
+    "seller": "iKlear",
+    "stock": 85,
+    "numOfReviews": 62
+  },
+
+  {
+    "name": "Sony WH-1000XM5 Headphone",
+    "price": 399.99,
+    "description": "Industry-leading noise canceling headphones",
+    "ratings": 4.8,
+    "images": [{"image": "/images/products/1.jpg"}],
+    "category": "Headphones",
+    "seller": "Sony",
+    "stock": 14,
+    "numOfReviews": 124
+  },
+  {
+    "name": "AirPods Pro (2nd Gen) Headphone",
+    "price": 249.00,
+    "description": "Apple's premium wireless earbuds with ANC",
+    "ratings": 4.7,
+    "images": [{"image": "/images/products/2.jpg"}],
+    "category": "Headphones",
+    "seller": "Apple",
+    "stock": 23,
+    "numOfReviews": 98
+  },
+  {
+    "name": "Bose QuietComfort Earbuds II Headphone",
+    "price": 279.00,
+    "description": "Premium noise canceling true wireless earbuds",
+    "ratings": 4.6,
+    "images": [{"image": "/images/products/3.jpg"}],
+    "category": "Headphones",
+    "seller": "Bose",
+    "stock": 11,
+    "numOfReviews": 76
+  },
+  {
+    "name": "Sennheiser HD 660S Headphone",
+    "price": 499.95,
+    "description": "Audiophile open-back headphones",
+    "ratings": 4.9,
+    "images": [{"image": "/images/products/4.jpg"}],
+    "category": "Headphones",
+    "seller": "Sennheiser",
+    "stock": 6,
+    "numOfReviews": 53
+  },
+  {
+    "name": "Jabra Elite 7 Pro Headphone",
+    "price": 199.99,
+    "description": "True wireless earbuds with adjustable ANC",
+    "ratings": 4.5,
+    "images": [{"image": "/images/products/5.jpg"}],
+    "category": "Headphones",
+    "seller": "Jabra",
+    "stock": 18,
+    "numOfReviews": 67
+  }
+]
