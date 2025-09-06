@@ -5,35 +5,29 @@ const ApiFeatures = require("../utils/apiFeatures");
 
 // get all products - /api/v1/products
 exports.getProducts = async (req, res, next) => {
-    try {
-        const resPerPage = 10;
-        
-        // Build query with search and filters
-        const apiFeatures = new ApiFeatures(Product.find(), req.query)
-            .search()
-            .filter();
-
-        // Get filtered count and total count
-        const filteredProductsCount = await apiFeatures.query.countDocuments();
-        const totalProductsCount = await Product.countDocuments();
-        
-        // Paginate the results
-        const products = await apiFeatures.paginate(resPerPage).query;
-
-        res.status(200).json({
-            success: true,
-            count: filteredProductsCount,
-            resPerPage,
-            totalProducts: totalProductsCount,
-            products
-        });
-    } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: error.message
-        });
+    const resPerPage = 10;
+    // const apiFeatures = new ApiFeatures(Product.find(), req.query).search().filter().paginate(resPerPage)
+    let buildQuery = () => {
+        return new ApiFeatures(Product.find(), req.query).search().filter()
     }
-};
+
+    const fillteredProductCount = await buildQuery().query.countDocuments();
+    const totlaProductcount = await  Product.countDocuments();
+    let productTotalCount = totlaProductcount
+    if(fillteredProductCount !== totlaProductcount){
+        productTotalCount = fillteredProductCount
+    }
+
+    // const testProducts = await Product.find({ price: { $gte: 900 } });
+    // console.log("Test products:", testProducts);
+    const products = await buildQuery().paginate(resPerPage).query;
+    res.status(200).json({
+        success : true,
+        count : productTotalCount,
+        resPerPage,
+        products
+    })
+}
 
 // create new product - /api/v1/products/new
 exports.newProduct = catchAsyncError (async (req, res, next) => {
