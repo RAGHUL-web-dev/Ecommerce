@@ -8,7 +8,7 @@ export default function UpdatePassword(){
     const [password, setPassword] = useState("")
     const [oldPassword, setOldPassword] = useState("")
     const dispatch = useDispatch();
-    const {loading, isUpdated, error } = useSelector(state => state.authState)
+    const {isUpdated, error } = useSelector(state => state.authState)
 
     const submitHandler = (e) => {
         e.preventDefault();
