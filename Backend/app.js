@@ -7,11 +7,14 @@ const order = require('./routes/order');
 const payment = require('./routes/payment');
 const cookieParser = require('cookie-parser');
 const errorMiddleware = require("./middleware/error");
+const cors = require('cors')
 
 // Middleware
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
+
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // API Routes
