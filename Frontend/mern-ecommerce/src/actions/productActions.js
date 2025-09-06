@@ -8,7 +8,7 @@ export const getProducts = (keyword, price, category, rating,  page = 1, limit =
 
     try {
         dispatch(productsRequest())
-        let url = `/api/v1/products?page=${page}&limit=${limit}`;
+        let url = `https://ecommerce-mmvv.onrender.com/api/v1/products?page=${page}&limit=${limit}`;
         if(keyword){
             url += `&keyword=${keyword}`
         }
@@ -33,7 +33,7 @@ export const getProduct = id => async (dispatch) => {
 
     try {
         dispatch(productRequest())
-        const { data } = await axios.get(`/api/v1/product/${id}`)
+        const { data } = await axios.get(`https://ecommerce-mmvv.onrender.com/api/v1/product/${id}`)
         dispatch(productSuccess(data))
     } catch (error) {
         dispatch(productFail(error.response.data.message))
@@ -49,7 +49,7 @@ export const createReview = reviewData => async (dispatch) => {
                 "Content-type" : "application/json"
             }
         }
-        const {data} = await axios.put(`/api/v1/review`, reviewData, config)
+        const {data} = await axios.put(`https://ecommerce-mmvv.onrender.com/api/v1/review`, reviewData, config)
         dispatch(createReviewSuccess(data))
     } catch (error) {
         dispatch(createReviewFail(error.response.data.message))
@@ -59,7 +59,7 @@ export const createReview = reviewData => async (dispatch) => {
 export const getAdminProducts = () => async (dispatch) => {
     try {
         dispatch(adminProductsRequest())
-        const {data} = await axios.get("/api/v1/admin/products")
+        const {data} = await axios.get("https://ecommerce-mmvv.onrender.com/api/v1/admin/products")
         dispatch(adminProductsSuccess(data))
     } catch (error) {
         dispatch(adminProductsFail(error.response.data.message))
@@ -70,7 +70,7 @@ export const getAdminProducts = () => async (dispatch) => {
 export const createNewProduct = newProduct => async (dispatch) => {
     try {
         dispatch(newproductRequest())
-        const {data} = await axios.post("/api/v1/admin/products/new", newProduct)
+        const {data} = await axios.post("https://ecommerce-mmvv.onrender.com/api/v1/admin/products/new", newProduct)
         dispatch(newproductSuccess(data))
     } catch (error) {
         dispatch(newproductFail(error.response.data.message))
@@ -81,7 +81,7 @@ export const createNewProduct = newProduct => async (dispatch) => {
 export const deletProduct = id => async (dispatch) => {
     try {
         dispatch(deleteProductRequest())
-        await axios.delete(`/api/v1/admin/product/${id}`)
+        await axios.delete(`https://ecommerce-mmvv.onrender.com/api/v1/admin/product/${id}`)
         dispatch(deleteProductSuccess())
     } catch (error) {
         dispatch(deleteProductFail(error.response.data.message))
@@ -91,7 +91,7 @@ export const deletProduct = id => async (dispatch) => {
 export const UpdateProduct = (id, newProduct) => async (dispatch) => {
     try {
         dispatch(updateProductRequest())
-        const {data} = await axios.put(`/api/v1/admin/product/${id}`, newProduct)
+        const {data} = await axios.put(`https://ecommerce-mmvv.onrender.com/api/v1/admin/product/${id}`, newProduct)
         dispatch(updateProductSuccess(data))
     } catch (error) {
         dispatch(updateProductFail(error.response.data.message))
@@ -103,7 +103,7 @@ export const getReviews = id => async (dispatch) => {
 
     try {
         dispatch(reviewsRequest())
-        const { data } = await axios.get(`/api/v1/admin/reviews`, {params : {id}})
+        const { data } = await axios.get(`https://ecommerce-mmvv.onrender.com/api/v1/admin/reviews`, {params : {id}})
         dispatch(reviewsSuccess(data))
     } catch (error) {
         dispatch(reviewsFail(error.response.data.message))
@@ -113,7 +113,7 @@ export const getReviews = id => async (dispatch) => {
 export const deleteReview = (productId, id) => async (dispatch) => {
     try {
         dispatch(deleteReviewsRequest())
-        await axios.delete(`/api/v1/admin/review/${id}`, {params : {productId}})
+        await axios.delete(`https://ecommerce-mmvv.onrender.com/api/v1/admin/review/${id}`, {params : {productId}})
         dispatch(deleteReviewsSuccess())
     } catch (error) {
         dispatch(deleteReviewsFail(error.response.data.message))
