@@ -21,6 +21,7 @@ const store = configureStore({
     // middleware: (getDefaultMiddleware) =>
     //     getDefaultMiddleware({ serializableCheck: false })
     //         .concat(myCustomMiddleware)
+    devTools: true,
 });
 
 
