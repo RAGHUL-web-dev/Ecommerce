@@ -2,7 +2,6 @@ import Sidebar from "./Sidebar"
 import { Fragment, useEffect, useState } from "react"
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, useParams } from "react-router-dom";
-import { getProduct, UpdateProduct as updateProductAction } from "../../actions/productActions";
 import { orderDetail as orderDetailAction, updateOrder as updateOrderAction } from "../../actions/orderActions"
 import { toast } from 'react-toastify'
 import { clearError, createOrderUpdated } from "../../slices/orderSlice";

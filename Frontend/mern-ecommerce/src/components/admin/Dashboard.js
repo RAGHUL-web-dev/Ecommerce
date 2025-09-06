@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Sidebar from "./Sidebar";
 import {useDispatch, useSelector} from "react-redux"
 import {getAdminProducts} from "../../actions/productActions"

@@ -6,6 +6,7 @@ import { createNewProduct } from "../../actions/productActions";
 import {toast} from 'react-toastify'
 import { clearError, clearProductCreated } from "../../slices/productSlice";
  
+
 export default function NewProducts(){
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
